@@ -79,8 +79,8 @@
       <div class="hero">
         <div class="hero-container">
           <div class="hero-info">
-            <h2>Your Favourite Food Delivered Hot & Fresh</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga placeat tempora, eius sint officia id?</p>
+            <h2 class="main-text">Your Favourite Food Delivered Hot & Fresh</h2>
+            <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga placeat tempora, eius sint officia id?</p>
             <button class="btn">
               Order Now <span><i class="fas fa-arrow-right"></i></span>
             </button>
@@ -93,22 +93,289 @@
           <div class="info-contents">
            <i class="fas fa-clock"></i>
             <p>Today 8:00 am - 7.00 pm</p>
-            <p>Working hours</p>
+            <p class="paragraph-text">Working hours</p>
           </div>
           <div class="info-contents">
            <i class="fas fa-map-marker-alt"></i>
             <p>New haven Enugu, Nigeria</p>
-            <p>Get Directions</p>
+            <p class="paragraph-text">Get Directions</p>
           </div>
           <div class="info-contents">
            <i class="fas fa-phone-square-alt"></i>
             <p>+234 (80) 30569887</p>
-            <p>Call Online</p>
+            <p class="paragraph-text">Call Online</p>
           </div>     
         </div>
       </div> 
           <!--  about section-->
-          
+  <section class="about-section section-center">
+    <div class="about-img">
+      <img src="./images/about-img-removebg-preview.png" class="img about-photo" alt="about-img">
+    </div>
+    <div class="about-info">
+      <h3 class="title">About</h3>
+      <h2 class="main-text">Food is an important part of a balanced diet</h2>
+      <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui a mollitia illo nulla ipsam aspernatur earum! Omnis id cupiditate earum dolore</p>
+      <p class="paragraph-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, corrupti quis eius corporis aperiam ex!</p>
+      <button class="btn" type="button">Learn More</button>
+    </div>
+  </section> 
+  
+  <!-- How it works -->
+  <section class="work-section section-center">
+    <div class="work-info">
+      <h3 class="title">work</h3>
+      <h2 class="main-text">
+        How it works
+      </h2>
+      <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo suscipit illum odio. Ullam earum impedit tempore dicta quis optio?</p>
+    </div>
+    <div class="info-container">
+      <div class="info-contents">
+        
+        <h5>Pick Meals</h5>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, assumenda voluptatum! Rerum doloremque fugiat amet.</p>
+      </div>
+      <div class="info-contents">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-finger" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+  <path d="M11 11.5v-2a1.5 1.5 0 1 1 3 0v2.5" />
+  <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+  <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+</svg>
+        <h5>Choose How Often</h5>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, assumenda voluptatum! Rerum doloremque fugiat amet.</p>
+      </div>
+      <div class="info-contents">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="7" cy="17" r="2" />
+  <circle cx="17" cy="17" r="2" />
+  <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+  <line x1="3" y1="9" x2="7" y2="9" />
+</svg>
+        <h5>Fast Deliveries</h5>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, assumenda voluptatum! Rerum doloremque fugiat amet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- cart  -->
+  <div class="cart-overlay show">
+    <aside class="cart">
+      <button class="cart-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <header>
+        <h3 class="text-slanted">
+          your bag
+        </h3>
+      </header>
+      <div class="cart-items">
+        <!-- single item -->
+        <article class="cart-item" data-id="">
+          <img src="./images/product-img1.jpeg" alt="name" class="cart-item-img">
+          <!-- item info -->
+          <div>
+            <h4 class="cart-item-name">Rice</h4>
+            <p class="cart-item-price">N2500.12</p>
+            <button class="cart-item-remove-btn">remove</button>
+          </div>
+          <!-- amount toggle -->
+          <div>
+            <button class="cart-item-increase-btn">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+            <p class="cart-item-amount">1</p>
+            <button class="cart-item-decrease-btn">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+        <!-- end of single item -->
+      </div>
+      <footer>
+        <h3 class="cart-total text-slanted">
+          total : N2500.12
+        </h3>
+        <button class="cart-checkout btn">checkout</button>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- Menu -->
+  <section class="menu-section">
+    <div class="work-info">
+      <h3 class="title">menu</h3>
+      <h2 class="main-text">
+        Explore our best menu
+      </h2>
+      <p class="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo suscipit illum odio. Ullam earum impedit tempore dicta quis optio?</p>
+    </div>
+    <div class="menu-items ">
+      <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h5>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h5>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h5>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn" data-id="1">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h5>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h5>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+      <article class="product">
+        <div class="product-container info-contents">
+          <img src="./images/product-img1.jpeg" class="img product-img" alt="">
+          <div class="product-details">
+            <h5>Rose Muffen</h3>
+            <p>N2000</p>
+          </div>
+          <div class="product-info">
+            <p>served with french fries + drink</p>
+            <p>choice of coke, fanta, sprite. Ugrade to large fries. Add whopper patty, Add tender crisp patty and more...</p>
+          </div>
+          <div class="product-icon">
+              <div class="review-star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              </div>
+                <button class="product-cart-btn">
+                  <i class="fas fa-plus"></i>
+                </button>
+          </div>
+        </div>
+      </article>
+      <!-- end of single product -->
+    </div>
+    <a href="products.html" class="btn">view more</a>
+  </section>
+
+  <!-- Testemonial -->
+  <section></section>
     </main>
     <script src="./index.js" type="module"></script>
   </body>
