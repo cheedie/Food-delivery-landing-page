@@ -5,7 +5,6 @@ const closeCartBtn = getElement(".cart-close");
 const toggleCartBtn = getElement(".toggle-cart");
 
 toggleCartBtn.addEventListener("click", () => {
-  console.log("hello world");
   cartOverLay.classList.add("show");
 });
 
