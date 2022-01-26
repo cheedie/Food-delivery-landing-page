@@ -1,4 +1,4 @@
-import { getElement } from "./utils.js";
+import { getElement } from "../utils.js";
 
 const cartOverLay = getElement(".cart-overlay");
 const closeCartBtn = getElement(".cart-close");
